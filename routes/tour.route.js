@@ -3,7 +3,7 @@ const router = express.Router();
 const tourController = require("../controllers/tour.controller");
 
 router
-  .route("/tour")
+  .route("/tours")
   .get(tourController.getTours)
   .post(tourController.createTour);
 
